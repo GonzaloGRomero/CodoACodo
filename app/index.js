@@ -26,7 +26,7 @@ function openForm() {
 }
 //api functions
 
-//function apiCall(difficulty) {
+function apiCall(difficulty) {
 	const apiKey = "yx3jbPTs9/VpvjlI+qvb5w==tkZsqvGlhJaACr6g";
 
 	if (difficulty === "beginner") {
@@ -44,12 +44,23 @@ function openForm() {
 
 				let markup = `
   				<div class="routine-card" id="routineCard">
-  					<h1>Some excercises for this race! </h1>
-  					<h3>${beginnerRes.name}</h3>
-  					<span>${beginnerRes.muscle}</span>
- 				<span>${beginnerRes.equipment}</span>
- 				<p>${beginnerRes.instructions}</p>
- 			</div>`;
+				  <div class="card-routine1">
+				  <h1>Some excercises for this race! </h1>
+						
+				  <li>
+					  Name: ${beginnerRes.name}
+				  </li>
+				  <li>
+					  Muscle: ${beginnerRes.muscle}
+				  </li>
+				  <li>
+					  Equipment: ${beginnerRes.equipment}
+				  </li>
+			  		<br><h3>Description</h3><br>
+			   		<p>${beginnerRes.instructions}</p>
+			   		</div>
+  					
+ 				</div>`;
 				return (document.getElementById("routineCard").innerHTML = markup);
 			},
 			error: function ajaxError(jqXHR) {
@@ -71,11 +82,13 @@ function openForm() {
 
 				let markup = `
   				<div class="routine-card" id="routineCard">
+				  <div class="card-routine1">
   					<h1>Some excercises for this race!</h1>
   					<h3>${intermediateRes.name}</h3>
   					<span>${intermediateRes.muscle}</span>
  				<span>${intermediateRes.equipment}</span>
  				<p>${intermediateRes.instructions}</p>
+				</div>
  			</div>`;
 				return (document.getElementById("routineCard").innerHTML = markup);
 			},
@@ -89,8 +102,8 @@ function openForm() {
 	}
 }
 
-//apiCall("beginner");
-//apiCall("intermediate");
+apiCall("beginner");
+apiCall("intermediate");
 
 function routine(e) {
 	if (e === "SHORT") {

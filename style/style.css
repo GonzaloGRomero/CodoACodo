@@ -558,7 +558,7 @@ background-size: cover;
 
 
 }
-.routine-card div {
+.card-routine1 {
 	 font-size: large;
 	 border: var(--greyblue2);
 	 border-width: 5px;
