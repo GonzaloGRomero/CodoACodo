@@ -26,7 +26,7 @@ function openForm() {
 }
 //api functions
 
-function apiCall(difficulty) {
+//function apiCall(difficulty) {
 	const apiKey = "yx3jbPTs9/VpvjlI+qvb5w==tkZsqvGlhJaACr6g";
 
 	if (difficulty === "beginner") {
@@ -89,8 +89,8 @@ function apiCall(difficulty) {
 	}
 }
 
-apiCall("beginner");
-apiCall("intermediate");
+//apiCall("beginner");
+//apiCall("intermediate");
 
 function routine(e) {
 	if (e === "SHORT") {

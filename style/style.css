@@ -396,16 +396,42 @@ main {
 		height: 100%;
 	}
 }
-/*TRAINING BUTTON STYLES*/
+/*TRAINING SECTION	 STYLES*/
 .training{
-width: 97.782%;
+width: 100%;
+background-image: url(/images/brian-erickson-XFneC_rHR48-unsplash.jpg);
+background-position: 0px -260px;
+background-size: cover;
 
 
+
+
+
+
+	
+}
+.training-container{
+	border-color: var(--greyblue1);
+	opacity: 0.9;
+	border-width: 2px;
+	border-style: ridge;
+	
+}
+
+.training-options{
+	color: var(--yellow1);
+	font-weight: 700;
+	font-size: 2rem;
+	line-height: 2.4rem;
+	font-size: 2.5rem;
+	padding: 25px;
 	
 }
 
 .training-options , .race-btns{
 	background-color: var(--greyblue1);
+
+	
 	
 
 }
@@ -445,6 +471,10 @@ width: 97.782%;
   transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
   user-select: none;
   vertical-align: middle;
+  
+	border-color: var(--neonyellow);
+	border-style: ridge;
+	border-width: 2px;
  
 }
 
@@ -483,6 +513,23 @@ width: 97.782%;
   column-gap: 10px;
   background-color: var(--greyblue1);
   padding: 10px;
+  
+ 
+}
+.grid-container > div {
+	color: #ffff;
+	border-style: inset;
+	border-width: 2px;
+	border-color: var(--greyblueD);
+	
+}
+.grid-container > div:hover{
+	cursor:default;
+}
+.item2 {
+	align-items: center;
+	font-size: 100%;
+	
 }
 
 .grid-container > div {
@@ -493,27 +540,54 @@ width: 97.782%;
 }
 .grid-container > div > p{
 	color: #cfd466;
+	font-size: 50%;
+	font-weight: bold;
+	
+}
+.grid-container > div > h3 {
+	color: #ffff;
+	
 }
 
-/*.raceName{
-	background-color: var(--greyblue1);
-	color: #cfd466;
-	display: flex;
-	justify-content: center;
-	padding: 10px;
-}
-.training{
-	background-color: #669999;
-}
-.race-btns{
-	padding-inline-start: 1%;
-	align-items: center;
+.routine-card {
+background-image: url(/images/wallpaperbetter.com_2560x1080.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 	
 
-	/*justify-content:space-evenly;
-}*/
 
+}
+.routine-card div {
+	 font-size: large;
+	 border: var(--greyblue2);
+	 border-width: 5px;
+	 border-style: ridge;
+	 padding: 40px;
+	 background-color: var(--grayblue3);
+	 opacity: 0.8;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: space-evenly;
+	 color: whitesmoke;
+}
+.card-routine1 h1 {
+	color: var(--yellow2);
+	font-size: larger;
+	align-self: center;
+	font-weight: bold;
+	padding: 10px;
+	
+}
+.card-routine1 > li{
+	
+	font-weight: bold;
+	
+}
+.card-routine1 p{
 
+	font-weight: 500;
+}
 
 /* 
 FORM STYLES */

@@ -14,7 +14,7 @@ var races = [
 	{
 		id: 2,
 		race: "UTHC 80",
-		presenter: "",
+		presenter: "The North Face",
 		start: "Saturday 7:00 AM",
 		Distance: "78 km",
 		Elevation: "+2146m / -1976m",
@@ -38,7 +38,7 @@ var races = [
 	{
 		id: 4,
 		race: "UTHC 42",
-		presenter: "",
+		presenter: "Guru",
 		start: "Saturday 7:00 AM",
 		Distance: "42,7 km",
 		Elevation: "+1300m / -1290m",
@@ -75,22 +75,15 @@ function raceSelec(i) {
 	
 	<div class="grid-container">
 	  <div class="item1">${races[i].race}</div>
-	  <div class="item2"><h3>${races[i].Distance}</h3> <br><p> distancia</p></div>
-	  <div class="item3">c2</div>  
-	  <div class="item4">c3</div>
-	  <div class="item5">c4</div>
-	  <div class="item6">c5</div>
-	  <div class="item7">c6</div>
+	  <div class="item2"><br><h3>${races[i].Distance}</h3> <br> <p> Distance</p></div>
+	  <div class="item3"><br><h3>${races[i].Elevation}</h3> <br> <p> Elevation</p></div>  
+	  <div class="item4"><br><h3>${races[i].Course}</h3> <br> <p> Course </p> </div>
+	  <div class="item5"><br><h3>${races[i].Stations}</h3> <br> <p> Stations</p></div>
+	  <div class="item6"><br><h3>${races[i].start}</h3> <br> <p> Date</p></div>
+	  <div class="item7"><br><h3>${races[i].presenter}</h3> <br> <p> Presenter</p></div>
 	
 	
-	</div>
-	
-
-					<h1 class="raceName">${races[i].race}</h1>
-					<h3 class="raceDistance">${races[i].Distance}</h3>
-					<span class="raceElevation">${races[i].Elevation}</span>
-					<span class="raceCourse">${races[i].Course}</span>
-					<span class="raceStations">${races[i].Stations}</span>`;
+	</div>`;
 
 	return (document.getElementById("race-description").innerHTML = markup);
 }
