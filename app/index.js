@@ -44,12 +44,23 @@ function apiCall(difficulty) {
 
 				let markup = `
   				<div class="routine-card" id="routineCard">
-  					<h1>Some excercises for this race! </h1>
-  					<h3>${beginnerRes.name}</h3>
-  					<span>${beginnerRes.muscle}</span>
- 				<span>${beginnerRes.equipment}</span>
- 				<p>${beginnerRes.instructions}</p>
- 			</div>`;
+				  <div class="card-routine1">
+				  <h1>Some excercises for this race! </h1>
+						
+				  <li>
+					  Name: ${beginnerRes.name}
+				  </li>
+				  <li>
+					  Muscle: ${beginnerRes.muscle}
+				  </li>
+				  <li>
+					  Equipment: ${beginnerRes.equipment}
+				  </li>
+			  		<br><h3>Description:</h3><br>
+			   		<p>${beginnerRes.instructions}</p>
+			   		</div>
+  					
+ 				</div>`;
 				return (document.getElementById("routineCard").innerHTML = markup);
 			},
 			error: function ajaxError(jqXHR) {
@@ -70,13 +81,25 @@ function apiCall(difficulty) {
 				let intermediateRes = result[Math.floor(Math.random() * 10)]; //asdasd
 
 				let markup = `
-  				<div class="routine-card" id="routineCard">
-  					<h1>Some excercises for this race!</h1>
-  					<h3>${intermediateRes.name}</h3>
-  					<span>${intermediateRes.muscle}</span>
- 				<span>${intermediateRes.equipment}</span>
- 				<p>${intermediateRes.instructions}</p>
- 			</div>`;
+				<div class="routine-card" id="routineCard">
+				  <div class="card-routine1">
+				  <h1>Some excercises for this race! </h1>
+						
+				  <li>
+					  Name: ${intermediateRes.name}
+				  </li>
+				  <li>
+					  Muscle: ${intermediateRes.muscle}
+				  </li>
+				  <li>
+					  Equipment: ${intermediateRes.equipment}
+				  </li>
+			  		<br><h3>Description:</h3><br>
+			   		<p>${intermediateRes.instructions}</p>
+			   		</div>
+  					
+ 				</div>`;
+  				
 				return (document.getElementById("routineCard").innerHTML = markup);
 			},
 			error: function ajaxError(jqXHR) {

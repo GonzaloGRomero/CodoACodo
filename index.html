@@ -133,6 +133,7 @@
 
 			<section class="training">
 				<div class="training-margin">
+					<div class="training-container">
 					<div class="training-options">
 						<h1 id="race-btn">Races</h1>
 					</div>
@@ -152,7 +153,7 @@
 						</button>
 						<button
 							class="racebtn"
-							onclick="raceSelec(2),apiCall('intermediate')"
+							onclick="raceSelec(2),apiCall('intermediate')"</button>
 						>
 							UTHC 65
 						</button>
@@ -162,7 +163,8 @@
 						<button class="racebtn" onclick="raceSelec(4),apiCall('beginner')">
 							Trail 28 km
 						</button>
-					</div>
+						</div>
+					
 					<div id="race-description">
 						<!-- <h1 class="raceName">${races[id].race}</h1>
 					<h3 class="raceDistance">${races[id].distance}</h3>
@@ -170,8 +172,38 @@
 					<span class="raceCourse">${races[id].course}</span>
 					<span class="raceStations">${races[id].stations}</span> -->
 					</div>
+					</div>
 					<div class="routine-card" id="routineCard">
-						<!-- <h1>Some excercises for this race!</h1>
+						<div class="card-routine1">
+						<!--<h1>Some excercises for this race! </h1>
+						
+							<li>
+								Name: Trail Running/Walking
+							</li>
+							<li>
+								Muscle: Quadriceps
+							</li>
+							<li>
+								Equipment: body only
+							</li>
+						<br><h3>Description</h3><br>
+ 						<p>Running or hiking on trails will get the blood pumping and heart beating almost immediately. Make sure you have good shoes. While you use the muscles in your calves and buttocks to pull yourself up a hill, the knees, joints and ankles absorb the bulk of the pounding coming back down. Take smaller steps as you walk downhill, keep your knees bent to reduce the impact and slow down to avoid falling. A 150 lb person can burn over 200 calories for 30 minutes walking uphill, compared to 175 on a flat surface. If running the trail, a 150 lb person can burn well over 500 calories in 30 minutes.</p>
+					-->
+					</div>
+					<!--<div class="card-routine2">
+						<h1>Some excercises for this race! </h1>
+  					<h3>Trail Running/Walking</h3>
+  					<span>quadriceps</span>
+ 				<span>body only</span>
+ 				<p>Running or hiking on trails will get the blood pumping and heart beating almost immediately. Make sure you have good shoes. While you use the muscles in your calves and buttocks to pull yourself up a hill, the knees, joints and ankles absorb the bulk of the pounding coming back down. Take smaller steps as you walk downhill, keep your knees bent to reduce the impact and slow down to avoid falling. A 150 lb person can burn over 200 calories for 30 minutes walking uphill, compared to 175 on a flat surface. If running the trail, a 150 lb person can burn well over 500 calories in 30 minutes.</p>
+					</div>
+					<div class="card-routine3">
+						<h1>Some excercises for this race! </h1>
+  					<h3>Trail Running/Walking</h3>
+  					<span>quadriceps</span>
+ 				<span>body only</span>
+ 				<p>Running or hiking on trails will get the blood pumping and heart beating almost immediately. Make sure you have good shoes. While you use the muscles in your calves and buttocks to pull yourself up a hill, the knees, joints and ankles absorb the bulk of the pounding coming back down. Take smaller steps as you walk downhill, keep your knees bent to reduce the impact and slow down to avoid falling. A 150 lb person can burn over 200 calories for 30 minutes walking uphill, compared to 175 on a flat surface. If running the trail, a 150 lb person can burn well over 500 calories in 30 minutes.</p>
+					</div>-->	<!-- <h1>Some excercises for this race!</h1>
 					<h3>${result[0].name}</h3>
 					<span>${result[0].muscle}</span>
 					<span id="span">${result[0].equipment}</span>
