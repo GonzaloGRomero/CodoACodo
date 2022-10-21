@@ -397,195 +397,191 @@ main {
 	}
 }
 /*TRAINING SECTION	 STYLES*/
-.training{
-width: 100%;
-background-image: url(/images/brian-erickson-XFneC_rHR48-unsplash.jpg);
-background-position: 0px -260px;
-background-size: cover;
-
-
-
-
-
-
-	
+.training {
+	width: 100%;
+	background-image: url(/images/brian-erickson-XFneC_rHR48-unsplash.jpg);
+	background-position: 0px -260px;
+	background-size: center;
 }
-.training-container{
+.training-container {
 	border-color: var(--greyblue1);
 	opacity: 0.9;
-	border-width: 2px;
-	border-style: ridge;
-	
+	border-width: 20px;
 }
 
-.training-options{
+.training-options {
 	color: var(--yellow1);
 	font-weight: 700;
 	font-size: 2rem;
 	line-height: 2.4rem;
 	font-size: 2.5rem;
 	padding: 25px;
-	
 }
 
-.training-options , .race-btns{
+.training-options,
+.race-btns {
 	background-color: var(--greyblue1);
-
-	
-	
-
-}
-#race-btn{
-	padding: 10px;
-	text-align-last: center;
-	color:  var(--yellow1);
-}
-.race-btns{
+	padding: 0 5%;
 	display: flex;
-	justify-content:space-around;
-	
+	justify-content: space-around;
+}
+#race-btn {
+	padding: 3%;
+	margin: 2%;
+	font-size: 4rem;
+	text-align: center;
+	color: var(--neonyellow);
 }
 
 .race-btns > button {
-  align-items: center;
-  background-color: var(--grayblue3);
-  border: 0;
-  border-radius: 100px;
-  box-sizing: border-box;
-  color: #ffffff;
-  cursor: pointer;
-  display: inline-flex;
-  font-size: 16px;
-  font-weight: 600;
-  justify-content: center;
-  line-height: 20px;
-  max-width: 480px;
-  min-height: 40px;
-  min-width: 0px;
-  overflow: hidden;
-  padding: 0px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
-  touch-action: manipulation;
-  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-  user-select: none;
-  vertical-align: middle;
-  
+	align-items: center;
+	background-color: var(--grayblue3);
+	border: 0;
+	border-radius: 100px;
+	box-sizing: border-box;
+	color: #ffffff;
+	cursor: pointer;
+	display: inline-flex;
+	font-size: 16px;
+	font-weight: 600;
+	justify-content: center;
+	line-height: 20px;
+	max-width: 480px;
+	min-height: 40px;
+	min-width: 0px;
+	overflow: hidden;
+	padding: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+	touch-action: manipulation;
+	transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+		box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+		color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+	user-select: none;
+	vertical-align: middle;
+
 	border-color: var(--neonyellow);
-	border-style: ridge;
+	border-style: solid;
 	border-width: 2px;
- 
 }
 
 .race-btns > button:hover,
-.race-btns > button:focus { 
-  background-color: var(--yellow1);
-  color: #ffffff;
+.race-btns > button:focus {
+	background-color: var(--yellow1);
+	color: #ffffff;
 }
 
 .race-btns > button:active {
-  background: #09223b;
-  color: rgb(255, 255, 255, .7);
+	background: #09223b;
+	color: rgb(255, 255, 255, 0.7);
 }
 
-.race-btns > button:disabled { 
-  cursor: not-allowed;
-  background: rgba(0, 0, 0, .08);
-  color: rgba(0, 0, 0, .3);
+.race-btns > button:disabled {
+	cursor: not-allowed;
+	background: rgba(0, 0, 0, 0.08);
+	color: rgba(0, 0, 0, 0.3);
 }
 
-.item1 { grid-area: header; }
-.item2 { grid-area: c1f1; }
-.item3 { grid-area: c2f1; }
-.item4 { grid-area: c3f1; }
-.item5 { grid-area: c4f1; }
-.item6 { grid-area: c5f1; }
-.item7 { grid-area: c6f1; }
-
+.item1 {
+	grid-area: header;
+}
+.item2 {
+	grid-area: c1f1;
+}
+.item3 {
+	grid-area: c2f1;
+}
+.item4 {
+	grid-area: c3f1;
+}
+.item5 {
+	grid-area: c4f1;
+}
+.item6 {
+	grid-area: c5f1;
+}
+.item7 {
+	grid-area: c6f1;
+}
 
 .grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'c1f1 c2f1 c3f1 c4f1 c5f1 c6f1';
-  row-gap: 10px;
-  column-gap: 10px;
-  background-color: var(--greyblue1);
-  padding: 10px;
-  
- 
+	display: grid;
+	grid-template-areas:
+		"header header header header header header"
+		"c1f1 c2f1 c3f1 c4f1 c5f1 c6f1";
+	row-gap: 5px;
+	column-gap: 5px;
+	background-color: var(--greyblue1);
+	padding: 2% 10% 2% 8.5%;
 }
 .grid-container > div {
 	color: #ffff;
-	border-style: inset;
+	border-style: solid;
+	margin-bottom: 1%;
 	border-width: 2px;
-	border-color: var(--greyblueD);
-	
+	gap: 2px;
+	border-color: #000;
 }
-.grid-container > div:hover{
-	cursor:default;
+.grid-container > div:hover {
+	cursor: default;
 }
 .item2 {
 	align-items: center;
 	font-size: 100%;
-	
 }
 
 .grid-container > div {
-  background-color: var(--grayblue3);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+	background-color: var(--grayblue3);
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
 }
-.grid-container > div > p{
+.grid-container > div > p {
 	color: #cfd466;
 	font-size: 50%;
 	font-weight: bold;
-	
 }
 .grid-container > div > h3 {
 	color: #ffff;
-	
 }
 
+@media screen and (max-width: 700px) {
+	.grid-container {
+		display: block;
+	}
+}
 .routine-card {
-background-image: url(/images/wallpaperbetter.com_2560x1080.jpg);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-	
-
-
+	background-image: url(/images/wallpaperbetter.com_2560x1080.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .card-routine1 {
-	 font-size: large;
-	 border: var(--greyblue2);
-	 border-width: 5px;
-	 border-style: ridge;
-	 padding: 40px;
-	 background-color: var(--grayblue3);
-	 opacity: 0.8;
-	 display: flex;
-	 flex-direction: column;
-	 justify-content: space-evenly;
-	 color: whitesmoke;
+	border: var(--greyblue2);
+	border-width: 5px;
+	border-style: solid;
+	padding: 40px;
+	background-color: var(--grayblue3);
+	opacity: 0.8;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	color: whitesmoke;
 }
 .card-routine1 h1 {
+	margin-bottom: 4%;
+	font-size: 3rem;
 	color: var(--yellow2);
-	font-size: larger;
+
 	align-self: center;
 	font-weight: bold;
 	padding: 10px;
-	
 }
-.card-routine1 > li{
-	
+.card-routine1 > li {
 	font-weight: bold;
-	
 }
-.card-routine1 p{
-
+.card-routine1 p {
 	font-weight: 500;
 }
 

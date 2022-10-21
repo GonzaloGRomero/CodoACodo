@@ -24,6 +24,40 @@ function openForm() {
 		flag = false;
 	}
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+	document.getElementById("form").addEventListener("submit", validarFormulario);
+});
+
+function validarFormulario(evento) {
+	evento.preventDefault();
+	var Name = document.getElementById("Name").value;
+	if (Name.length == 0) {
+		alert("You forgot your name");
+		return;
+	}
+	var Lastname = document.getElementById("Lastname").value;
+	if (Lastname.length == 0) {
+		alert("You forgot your last name");
+		return;
+	}
+	const email = document.getElementById("email");
+
+	email.addEventListener("input", function (event) {
+		if (email.validity.typeMismatch) {
+			email.setCustomValidity("Please wirte a valid email account!");
+		} else {
+			email.setCustomValidity("");
+		}
+	});
+	var psw = document.getElementById("psw").value;
+	if (psw.length == 0) {
+		alert("La clave no es válida");
+		return;
+	}
+	this.submit();
+}
+
 //api functions
 
 function apiCall(difficulty) {
@@ -99,7 +133,7 @@ function apiCall(difficulty) {
 			   		</div>
   					
  				</div>`;
-  				
+
 				return (document.getElementById("routineCard").innerHTML = markup);
 			},
 			error: function ajaxError(jqXHR) {
